@@ -13,13 +13,13 @@ export const getResult = username => {
         try {
             const userData = await fetchUserData(username)
             let output = {
-                name: userData[0].owner.login,
-                avatar: userData[0].owner.avatar_url,
-                link: userData[0].owner.html_url
+                userData: {
+                    name: userData[0].owner.login,
+                    avatar: userData[0].owner.avatar_url,
+                    link: userData[0].owner.html_url,
+                    userRepos: userData.map(repo => repo.name)
+                }
             }
-            console.log('*****************')
-            console.log(output)
-            console.log('*****************')
             dispatch(loadResult(output))
         } catch (err) {
             console.warn(err.message)
@@ -31,7 +31,6 @@ export const getResult = username => {
 const fetchUserData = async username => {
     try {
         const data = await axios.get(`https://api.github.com/users/${username}/repos`)
-
         return data.data
     } catch (err) {
         if (data.status === 404) {throw Error('That is not a valid user')}
