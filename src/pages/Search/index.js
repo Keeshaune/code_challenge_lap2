@@ -17,7 +17,7 @@ const Search = () => {
 
   const search = searchTerm => dispatch(getResult(searchTerm))
 
-  const renderResult = () => loading ? <p>Loading...</p> : <Result result ={result}/>
+  const renderResult = () => loading ? <p>Loading...</p> : <Result result={result}/>
 
   return (
     <>
