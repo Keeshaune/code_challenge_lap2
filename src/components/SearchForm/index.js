@@ -1,13 +1,14 @@
 import React, { useState } from 'react'
-import { getResult } from '../../actions'
+// import { getResult } from '../../actions'
 
 
-const SearchForm = () => {
+const SearchForm = ({getResult}) => {
     const [username, setUsername] = useState("")
 
     const handleSubmit = e => {
         e.preventDefault()
         getResult(username)
+        console.log(username)
     }
 
     const updateInput = e => {
@@ -17,7 +18,7 @@ const SearchForm = () => {
     
     return (
         <form onSubmit={handleSubmit}>
-            <input onChange={updateInput} type="text" value={username} />
+            <input onChange={updateInput} type="text" value={username}/>
             <input type="Submit" value="Search" />
         </form>
     )

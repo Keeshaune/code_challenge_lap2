@@ -1,15 +1,15 @@
 const initState = {
-    username: "",
-    result: {},
+    username: "keeshaune",
+    payload: "thamiem",
 
 }
 
-const SearchUser = (state = initState, action) => {
+const searchUser = (state = initState, action) => {
     switch(action.type) {
         case 'LOADING':
             return {...state, username : action.username, loading: true}
         case 'LOAD_RESULT':
-            return {...state, result: action.result, loading: false, error: false}
+            return {...state, result: action.payload, loading: false, error: false}
         case 'SET_ERROR':
             return {...state, error: action.payload, loading: false}
         default:
@@ -17,4 +17,4 @@ const SearchUser = (state = initState, action) => {
     }
 }
 
-export default SearchUser
+export default searchUser
