@@ -2,12 +2,9 @@ import axios from 'axios'
 
 const loading = username => ({type: 'LOADING', payload: username})
 
-//////////////////////////////////7
-// need to see what results looks like
-///////////////////////////////////
-const loadResult = ({ results: { name, avatar, link } }) => ({
+const loadResult = (result) => ({
     type: 'LOAD_RESULT',
-    payload: { name, avatar, link }
+    payload: result
 })
 
 export const getResult = username => {
@@ -15,9 +12,6 @@ export const getResult = username => {
         dispatch(loading(username));
         try {
             const userData = await fetchUserData(username)
-            // console.log('*****************')
-            // console.log(userData)
-            // console.log('*****************')
             let output = {
                 name: userData[0].owner.login,
                 avatar: userData[0].owner.avatar_url,

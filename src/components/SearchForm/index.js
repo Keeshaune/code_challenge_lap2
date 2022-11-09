@@ -18,7 +18,7 @@ const SearchForm = ({getResult}) => {
     
     return (
         <form onSubmit={handleSubmit}>
-            <input onChange={updateInput} type="text" value={username}/>
+            <input value={username}  type="text"  onChange={updateInput}/>
             <input type="Submit" value="Search" />
         </form>
     )
