@@ -4,7 +4,7 @@ const initState = {
 
 }
 
-const searchUser = (state = initState, action) => {
+const SearchUser = (state = initState, action) => {
     switch(action.type) {
         case 'LOADING':
             return {...state, username : action.username, loading: true}
@@ -17,4 +17,4 @@ const searchUser = (state = initState, action) => {
     }
 }
 
-export default searchUser
+export default SearchUser

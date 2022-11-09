@@ -1,1 +1,1 @@
-export { default as searchUser } from './searchReducer';
+export { default as SearchUser } from './SearchUser';
