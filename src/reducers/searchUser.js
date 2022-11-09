@@ -1,11 +1,12 @@
 const initState = {
-    username: "keeshaune",
-    result: {
-        username: "",
+    username: "",
+    data: {
+        name: "",
         avatar: "",
         link: ""
     },
-    loading: false
+    loading:false
+
 }
 
 const searchUser = (state = initState, action) => {
@@ -13,7 +14,7 @@ const searchUser = (state = initState, action) => {
         case 'LOADING':
             return {...state, username : action.payload, loading: true}
         case 'LOAD_RESULT':
-            return {...state, result: action.payload, loading: false, error: false}
+            return {...state, data: action.payload, loading: false, error: false}
         case 'SET_ERROR':
             return {...state, error: action.payload, loading: false}
         default:
