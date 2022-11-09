@@ -10,8 +10,14 @@ function App() {
 
   return (
     <div >
-  
       <NavBar /> 
+      <main>
+      <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/search" element={<Search />} />
+        </Routes>
+
+      </main>
     </div>
   );
 }
