@@ -13,6 +13,7 @@
     border-bottom: 1px solid #f2f2f2;
 }
 
+
 .navbar {
     color: black;
     font-weight: bold;
@@ -24,8 +25,43 @@
 
 .navbar .links {
     margin-left: auto;
+
 }
 
+.navbar button {
+    margin-left: auto;
+    font-size: 15px;
+    font-weight: bold;
+    margin-left: 15px;
+    width:60px;
+    background: white(0, 0, 255, 0.487);
+    padding: 5px;
+    border: 2px solid black;
+    border-radius: 6px;
+}
+
+.navbar button:hover{
+    margin-left: auto;
+
+    color: white;
+    margin-left: 15px;
+    width:60px;
+    background: rgba(0, 0, 255, 0.139);
+    padding: 5px;
+    border: none;
+    border: 2px solid black;
+    border-radius: 6px;
+    cursor: pointer;
+
+}
+
+/* width: 70px;
+	padding: 5px 10px;
+	background-color: white;
+	border: none;
+	border-radius: 6px;
+	cursor: pointer;
+	border: 1px solid transparent; */
 .navbar a {
     margin-left: 16px;
     text-decoration: none;
@@ -34,4 +70,5 @@
 
 .navbar a:hover {
     color: white;
+    cursor: pointer;
 }

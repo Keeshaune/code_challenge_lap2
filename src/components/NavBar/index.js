@@ -10,7 +10,9 @@ const NavBar = () => {
         <nav className="navbar">
         <h1>RepoTracker</h1>
         <div className="links">
+        
             <NavLink to="/">Home</NavLink>
+            
             <NavLink  to="/search">Search</NavLink>
           
             {/* <p onClick={()=> navigate(-1)}>Back  </p> */}

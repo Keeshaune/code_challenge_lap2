@@ -1,6 +1,7 @@
 import React from 'react'
 import './index.css'
 import Repo from '../Repo'
+import { IconName } from "react-icons/go";
 
 export default function ({ data }) {
     return (
