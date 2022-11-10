@@ -1,9 +1,7 @@
 const initState = {
     username: "",
     data: {
-        name: "",
-        avatar: "",
-        link: ""
+        
     },
     loading:false
 

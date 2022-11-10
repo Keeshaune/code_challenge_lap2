@@ -7,20 +7,23 @@ const loadResult = (result) => ({
     payload: result
 })
 
+
 export const getResult = username => {
     return async dispatch => {
         dispatch(loading(username));
         try {
             const userData = await fetchUserData(username)
-            let output = {
-                name: userData[0].owner.login,
-                avatar: userData[0].owner.avatar_url,
-                link: userData[0].owner.html_url
-            }
+            // let output = {
+            //     name: userData[0].owner.login,
+            //     avatar: userData[0].owner.avatar_url,
+            //     link: userData[0].owner.html_url
+            // }
+    
+            
             console.log('*****************')
-            console.log(output)
+            console.log(userData)
             console.log('*****************')
-            dispatch(loadResult(output))
+            dispatch(loadResult(userData))
         } catch (err) {
             console.warn(err.message)
             dispatch({type: 'SET_ERROR', payload: err.message})
