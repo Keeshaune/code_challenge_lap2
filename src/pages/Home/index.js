@@ -1,14 +1,15 @@
 import React from 'react'
-
+import Favicon from 'react-favicon'
+import './index.css'
 
 
 const Home = () => {
   return (
-    <> 
-    
-
-    <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="Image of Github Logo" />
-    </>
+    <div className="home"> 
+      <Favicon url='../../images/Track-Github.png' />
+      <img src={require('../../images/Track-Github.png')} />
+      <p>Come here to keep track of all your friends' Github repositories</p>
+    </div>
   )
 }
 
