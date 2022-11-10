@@ -12,12 +12,12 @@ export default function Repo ({repo}) { //userRepos[i]
 
     const date = formatDate(repo.created_at)
 
-    const info = <div className='repo'>
+    const info = <>
     <p>stargazers: {repo.stargazers_count}</p>    
     <p>watchers: {repo.watchers_count}</p>    
     <p>forks: {repo.forks_count}</p>    
     <p>created: {date}</p>      
-    </div>
+    </>
 
     return (
         <div className='repo' onClick={handleClick}>
