@@ -4,3 +4,14 @@
     padding: 5px;
     margin: 8px 20%;
 }
+
+.repo:hover {
+    background: linear-gradient(to left, #56ccf2, #2f80ed);
+    border: black 1px solid;
+    border-radius: 8px;
+    padding: 7px;
+    margin: 8px 20%;
+    cursor: pointer;
+    -webkit-transform: translateY(-4px);
+    transform: translateY(-4px);
+}

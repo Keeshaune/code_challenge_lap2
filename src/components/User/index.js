@@ -7,15 +7,14 @@ export default function ({ data }) {
     return (
         <div className="user-container">
             <div className="user-data-positions">
-                <div>
-                    <div className="header">
+                <div className="user-profile">
+                    <div className="user-header">
                         <img src={`${data.avatar}`} />
                         <h1>{data.name}</h1>
                     </div>
-                    <a href={`${data.link}`}>{data.link}</a>
                 </div>
                 <div id="user-card">
-                    <img src={`https://github-readme-stats.vercel.app/api?username=${data.name}&show_icons=true&locale=en&theme=transparent`} />
+                    <a href={`${data.link}`}><img src={`https://github-readme-stats.vercel.app/api?username=${data.name}&show_icons=true&locale=en&theme=transparent`} /></a>
                 </div>
             </div>
             <div className="repo-container" >
