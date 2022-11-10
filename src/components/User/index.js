@@ -4,15 +4,21 @@ import Repo from '../Repo'
 
 export default function ({ data }) {
     return (
-        <div>
-            <div>
+        <div className="user-container">
+            <div className="user-data-positions">
                 <div>
-                    <h1>{data.name}</h1>
+                    <div className="header">
                     <img src={`${data.avatar}`} />
-                    <a href={`${data.link}`}>{data.link}</a>
+                    <h1>{data.name}</h1>
+                    </div>
+                   
+                    
+                        <a href={`${data.link}`}>{data.link}</a>
+                   
                 </div>
-                <div>
-                    <img src={`https://github-readme-stats.vercel.app/api?username=${data.name}&show_icons=true&locale=en&theme=tokyonight`}/>
+                <div id="user-card">
+
+                    <img src={`https://github-readme-stats.vercel.app/api?username=${data.name}&show_icons=true&locale=en&theme=transparent`} />
                 </div>
             </div>
 
