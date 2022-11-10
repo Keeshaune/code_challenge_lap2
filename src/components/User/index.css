@@ -28,6 +28,10 @@
   flex-direction: row;
 } 
 
+li {
+    list-style: none;
+}
+
 
 
 /* grid-template-columns: 1fr 1fr 1fr;

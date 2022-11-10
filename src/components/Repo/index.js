@@ -1,4 +1,5 @@
 import React, {useState} from 'react'
+import './index.css'
 
 
 
@@ -11,7 +12,7 @@ export default function Repo ({repo}) { //userRepos[i]
 
     const date = formatDate(repo.created_at)
 
-    const info = <div>
+    const info = <div className='repo'>
     <p>stargazers: {repo.stargazers_count}</p>    
     <p>watchers: {repo.watchers_count}</p>    
     <p>forks: {repo.forks_count}</p>    
@@ -19,7 +20,7 @@ export default function Repo ({repo}) { //userRepos[i]
     </div>
 
     return (
-        <div onClick={handleClick}>
+        <div className='repo' onClick={handleClick}>
             {isActive ? info : repo.name}
         </div>
     )
