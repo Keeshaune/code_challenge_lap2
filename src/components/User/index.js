@@ -8,6 +8,11 @@ export default function ({data}) {
                 <img src={`${data.avatar}`} />
                 <a href={`${data.link}`}>{data.link}</a>
             </div>
+            <ul>
+                {data.userRepos.map(repo => {
+                    return <li>{repo}</li>
+                })}
+            </ul>
         </>
     )
 }
