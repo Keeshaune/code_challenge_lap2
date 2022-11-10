@@ -1,6 +1,4 @@
 import React, { useState, useEffect } from 'react'
-// import { getResult } from '../../actions'
-
 
 const SearchForm = ({getResult}) => {
     const [username, setUsername] = useState("")
