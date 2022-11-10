@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 // import { getResult } from '../../actions'
+import './index.css'
 
 
 const SearchForm = ({getResult}) => {
@@ -20,9 +21,9 @@ const SearchForm = ({getResult}) => {
       }, [])
     
     return (
-        <form onSubmit={handleSubmit}>
-            <input type="text"  value={username} onChange={updateInput}/>
-            <input type="Submit" value="Search" />
+        <form className="form-container" onSubmit={handleSubmit}>
+            <input className="input-text" type="text"  value={username} onChange={updateInput}/>
+            <input className="submit" type="Submit" value="Search" />
         </form>
     )
 }

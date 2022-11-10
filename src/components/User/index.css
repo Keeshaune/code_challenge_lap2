@@ -1,0 +1,17 @@
+.user-container {
+    background:white;
+    width: 90%;
+	margin: 0 auto;
+	max-width: 1200px;
+	padding: 20px 0px;
+	font-size: 20px;
+    
+}
+.user-container img {
+	width: 50px;
+}
+.user-info {
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+}
