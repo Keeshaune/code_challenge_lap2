@@ -13,12 +13,10 @@ export const getResult = username => {
         try {
             const userData = await fetchUserData(username)
             let output = {
-                userData: {
-                    name: userData[0].owner.login,
-                    avatar: userData[0].owner.avatar_url,
-                    link: userData[0].owner.html_url,
-                    userRepos: userData.map(repo => repo.name)
-                }
+                name: userData[0].owner.login,
+                avatar: userData[0].owner.avatar_url,
+                link: userData[0].owner.html_url,
+                userRepos: userData.map(repo => repo.name)
             }
             dispatch(loadResult(output))
         } catch (err) {

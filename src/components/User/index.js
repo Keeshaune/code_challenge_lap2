@@ -4,9 +4,9 @@ export default function ({data}) {
     return (
         <>
             <div>
-                <h1>{data.userData.name}</h1>
-                <img src={`${data.userData.avatar}`} />
-                <a href={`${data.userData.link}`}>{data.userData.link}</a>
+                <h1>{data.name}</h1>
+                <img src={`${data.avatar}`} />
+                <a href={`${data.link}`}>{data.link}</a>
             </div>
         </>
     )

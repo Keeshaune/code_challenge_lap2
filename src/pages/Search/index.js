@@ -14,7 +14,6 @@ const Search = () => {
 
   const search = searchTerm => dispatch(getResult(searchTerm))
 
-  console.log(data)
   const renderUser = () => loading ? <p>Loading...</p> : <User data={data} />
   return (
     <>
