@@ -21,12 +21,13 @@
 .user-data-positions {
     display: flexbox;
     justify-content: space-between;
-} 
-.header  {
-  display: inline-block;
-  justify-content: space-between;
-  flex-direction: row;
-} 
+}
+
+.header {
+    display: inline-block;
+    justify-content: space-between;
+    flex-direction: row;
+}
 
 
 
