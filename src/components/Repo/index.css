@@ -12,6 +12,6 @@
     padding: 7px;
     margin: 8px 20%;
     cursor: pointer;
-    -webkit-transform: translateY(-4px);
-    transform: translateY(-4px);
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
 }
