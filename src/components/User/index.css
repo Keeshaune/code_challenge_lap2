@@ -1,5 +1,6 @@
 .user-container {
     background: rgba(255, 255, 255, 0.923);
+    /* background: linear-gradient(to right, #f2ae56, #da6420); */
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -18,12 +19,14 @@
     width: 200px;
 }
 
-.user-data-positions {
-    display: flexbox;
-    justify-content: space-between;
+.user-profile {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 20%;
 } 
-.header  {
-  display: inline-block;
+
+.user-header  {
+  display: flex;
   justify-content: space-between;
   flex-direction: row;
 } 
