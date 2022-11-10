@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 // import { getResult } from '../../actions'
 
 
@@ -8,13 +8,16 @@ const SearchForm = ({getResult}) => {
     const handleSubmit = e => {
         e.preventDefault()
         getResult(username)
-        console.log(username)
     }
 
     const updateInput = e => {
         const input = e.target.value
         setUsername(input)
     }
+
+    useEffect(() => {
+        getResult('Keeshaune')
+      }, [])
     
     return (
         <form onSubmit={handleSubmit}>
