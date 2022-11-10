@@ -1,18 +1,21 @@
 import React from 'react'
+import { RepoList } from '../../components'
 
-export default function ({data}) {
+export default function ({ data }) {
     return (
-        <>
+        <div>
             <div>
                 <h1>{data.name}</h1>
                 <img src={`${data.avatar}`} />
                 <a href={`${data.link}`}>{data.link}</a>
             </div>
-            <ul>
+
+            <div>
                 {data.userRepos.map(repo => {
-                    return <li>{repo}</li>
+                    <RepoList name={repo} />
                 })}
-            </ul>
-        </>
+            </div>
+        </div>
+
     )
 }
