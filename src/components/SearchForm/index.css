@@ -22,6 +22,7 @@
     background: linear-gradient(to right, #56ccf2, #2f80ed); 
 }
 .submit:hover {
+	cursor: pointer;
     width: 90px;
 	margin: 10px auto;
 	padding: 8px 16px;

@@ -21,7 +21,8 @@ const SearchForm = ({getResult}) => {
     
     return (
         <form className="form-container" onSubmit={handleSubmit}>
-            <input className="input-text" type="text"  value={username} onChange={updateInput}/>
+            <label htmlFor="input-name">Enter Github Name</label>
+            <input id="input-name" className="input-text" type="text"  value={username} onChange={updateInput}/>
             <input className="submit" type="Submit" value="Search" />
         </form>
     )

@@ -19,7 +19,7 @@ const Search = () => {
     <>
       <SearchForm getResult={search} />
       <div id="repos">
-        {error ? <p>there was an error {error}</p> : renderUser() }
+        {error ? <p>Github Account Does Not Exist</p> : renderUser() }
       </div>
     </>
   )
