@@ -1,5 +1,5 @@
 import React from 'react'
-import { RepoList } from '../../components'
+
 
 export default function ({ data }) {
     return (
@@ -12,7 +12,7 @@ export default function ({ data }) {
 
             <div>
                 {data.userRepos.map(repo => {
-                    <RepoList name={repo} />
+                    return <li>{repo.name}</li>
                 })}
             </div>
         </div>

@@ -1,14 +1,14 @@
-// import React from 'react'
+import React from 'react'
 
-// export default function Repo ({data}) {
+export default function Repo ({data}) { //userData (all data)
 
 
 
-//     return (
-//         <div>
-//             <h1>{data.userData.name}</h1>
-//             <img src={`${data.userData.avatar}`} />
-//             <a href={`${data.userData.link}`}>{data.user.link}</a>
-//         </div>
-//     )
-// }
+    return (
+        <div>
+            <h1>{data.userData.name}</h1>
+            <img src={`${data.userData.avatar}`} />
+            <a href={`${data.userData.link}`}>{data.user.link}</a>
+        </div>
+    )
+}
