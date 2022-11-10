@@ -10,7 +10,7 @@ export default function ({data}) {
             </div>
             <ul>
                 {data.userRepos.map(repo => {
-                    return <li>{repo}</li>
+                    return <li>{repo.name}</li>
                 })}
             </ul>
         </>

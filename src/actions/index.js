@@ -16,7 +16,7 @@ export const getResult = username => {
                 name: userData[0].owner.login,
                 avatar: userData[0].owner.avatar_url,
                 link: userData[0].owner.html_url,
-                userRepos: userData.map(repo => repo.name)
+                userRepos: userData
             }
             dispatch(loadResult(output))
         } catch (err) {
