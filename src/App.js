@@ -1,6 +1,6 @@
 import React from "react";
 import { Routes, Route } from 'react-router-dom'
-import { Home, Search } from './pages'
+import { Home, Search, NotFound } from './pages'
 import { NavBar } from './components'
 import './app.css'
 
@@ -16,6 +16,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/search" element={<Search />} />
+            <Route path="*" element={<NotFound />} />
           </Routes>
         </main>
       </div>

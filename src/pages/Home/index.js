@@ -9,7 +9,7 @@ const Home = () => {
     <div className="home"> 
       <Helmet>
         <meta charSet="utf-8" />
-        <title>My Title</title>
+        <title>RepoTrackerz</title>
         <link rel="icon" type='image/png' href={favicon} />
         <meta name="description" content="Helmet application" />
       </Helmet>
