@@ -1,12 +1,18 @@
 import React from 'react'
-// import Favicon from 'react-favicon'
+import {Helmet} from "react-helmet"
+import favicon from '../../images/Track-Github.png'
 import './index.css'
 
 
 const Home = () => {
   return (
     <div className="home"> 
-      {/* <Favicon url='../../images/Track-Github.png' /> */}
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>My Title</title>
+        <link rel="icon" type='image/png' href={favicon} />
+        <meta name="description" content="Helmet application" />
+      </Helmet>
       <img src={require('../../images/Track-Github.png')} />
       <p>Come here to keep track of all your friends' Github repositories</p>
     </div>
